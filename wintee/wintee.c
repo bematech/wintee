@@ -39,7 +39,7 @@
 #include <io.h>
 #include <fcntl.h>
 #include <sys\stat.h>
-#include <rb\queue.h>
+#include "queue.h"
 #include <dos.h>
 #include <string.h>
 
@@ -81,7 +81,6 @@ display_help(void)
     printf("Usage: wtee [OPTION]... [FILE]...\n");
     printf("Copy standard input to each FILE, and also to standard output\n\n");
     printf("-a \t\t append to the given FILEs, do not overwrite\n");
-    printf("-i \t\t ignore interrupt signals\n");
     printf("-?, --help \t display this help and exit\n");
     printf("--version \t output version information and exit\n\n");
     printf("If a FILE is -, copy again to standard output\n\n");
@@ -145,10 +144,6 @@ int get_opt(int argc, char *argv[])
                             append_files = TRUE;
                             processed_parameter = TRUE;
                             break;
-                       case 'i':
-                            disable(); /* disable interrupts */
-                            processed_parameter = TRUE;
-                       	    break;
                        case '?':
                        	    display_help();
                             exit(0);
