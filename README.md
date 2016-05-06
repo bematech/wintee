@@ -1,6 +1,9 @@
 # wintee
 original project from code.google.com/p/wintee
 
+The `tee' command copies standard input to standard output and also to any files given as arguments. This is useful when you want not only to send some data down a pipe, but also to save a copy.
+
+
 example use:
   
 c:\ dir >> logfile.log [standart use no cli output]
