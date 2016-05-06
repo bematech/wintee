@@ -1,26 +1,5 @@
 # wintee
-Automatically exported from code.google.com/p/wintee
-
-binary for windows is here:
-https://wintee.googlecode.com/files/wtee.exe
-  
-and
-  
-https://github.com/WinLAFS/wintee/releases
-  
-here:
-  
-https://github.com/WinLAFS/wintee/releases/download/v1.0.1/wtee.exe
-  
-wiki is downloaded as branch
-  
-https://github.com/WinLAFS/wintee/tree/wiki
-  
-  
-identical aim other solution
-  
-see https://github.com/mpderbec/WinTee
-   
+original project from code.google.com/p/wintee
 
 example use:
   
